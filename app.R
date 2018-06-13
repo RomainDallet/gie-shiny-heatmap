@@ -8,6 +8,7 @@ data_table <- t(as.matrix(read.table("inputdata.tsv", header=TRUE, check.names=F
 
 # User interface ----
 ui <- fluidPage(
+	includeCSS("styles.css"),
         fluidRow(
                 d3heatmapOutput('HEATMAP')
         )
