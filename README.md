@@ -2,8 +2,21 @@
 
 # PCA visualization (In Progress)
 
-This repository makes possible to run a Shiny application in a Galaxy Interactive Environment to display PCA from a tabular file. The PCA visualization use R explor package and FactoMineR
+This repository makes possible to run a Shiny application in a Galaxy Interactive Environment to display Heatmap from a dataMatrix tabular file. Currently, we try 2 different packages for the visualization, [d3heatmap](https://github.com/rstudio/d3heatmap) using d3.js and htmlwidgets, and [heatmaply](https://github.com/talgalili/heatmaply) based on ggplot2 and plotly.js.
 
 ## Context
 
 * Using the [Docker Shiny Container](https://github.com/workflow4metabolomics/gie-shiny) to build Shiny GIE.
+
+## Visualization
+
+Temporary visualizations:
+
+- d3heatmap :
+
+[](https://raw.githubusercontent.com/workflow4metabolomics/gie-shiny-heatmap/master/static/images/gie-shiny-heatmap-d3.png)
+
+- heatmaply :
+
+[](https://raw.githubusercontent.com/workflow4metabolomics/gie-shiny-heatmap/master/static/images/gie-shiny-heatmap-plotly.png)
+

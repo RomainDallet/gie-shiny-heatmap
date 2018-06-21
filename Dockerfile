@@ -15,4 +15,4 @@ RUN mkdir -p /srv/shiny-server/samples/chromato_visu
 RUN chmod -R 755 /srv/shiny-server/samples/chromato_visu
 RUN chown shiny.shiny /srv/shiny-server/samples/chromato_visu
 COPY ./app.R /srv/shiny-server/samples/chromato_visu/app.R
-COPY ./styles.css /srv/shiny-server/samples/chromato_visu/styles.css
+COPY ./static/css/styles.css /srv/shiny-server/samples/chromato_visu/styles.css

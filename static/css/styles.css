@@ -1,4 +1,8 @@
-#HEATMAP {
+#HEATMAP_plotly {
+	height : 600px !important
+}
+
+#HEATMAP_d3 {
 	height : 600px !important
 }
 
