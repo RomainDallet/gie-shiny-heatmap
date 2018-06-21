@@ -14,9 +14,9 @@ Temporary visualizations:
 
 - d3heatmap :
 
-[](https://raw.githubusercontent.com/workflow4metabolomics/gie-shiny-heatmap/master/static/images/gie-shiny-heatmap-d3.png)
+![gie-shiny-heatmap-d3](https://github.com/RomainDallet/gie-shiny-heatmap/blob/master/static/images/gie-shiny-heatmap-d3.png)
 
 - heatmaply :
 
-[](https://raw.githubusercontent.com/workflow4metabolomics/gie-shiny-heatmap/master/static/images/gie-shiny-heatmap-plotly.png)
+![gie-shiny-heatmap-plotly](https://github.com/RomainDallet/gie-shiny-heatmap/blob/master/static/images/gie-shiny-heatmap-plotly.png)
 
