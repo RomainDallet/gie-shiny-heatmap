@@ -6,7 +6,6 @@ library(d3heatmap)
 library(RColorBrewer)
 library(BBmisc)
 
-
 # Import dataset ----
 data_table <- t(as.matrix(read.table("inputdata.tsv", header=TRUE, check.names=FALSE, row.names=1, sep="\t")))
 
@@ -75,7 +74,7 @@ ui <- dashboardPage(
 				numericInput(
 					inputId = "krow",
 					label = "Number of sample clusters to identify :",
-					value = 3,
+					value = 1,
 					min = 1,
 					max = 10,
 					step = 1
@@ -85,7 +84,7 @@ ui <- dashboardPage(
 				numericInput(
 					inputId = "kcol",
 					label = "Number of variable clusters to identify :",
-					value = 3,
+					value = 1,
 					min = 1,
 					max = 10,
 					step = 1
@@ -141,7 +140,6 @@ server <- function(input, output) {
 		
 		return(graph_d3)
     })
-
 }
 
 # Run app ----
