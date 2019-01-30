@@ -10,13 +10,5 @@ This repository makes possible to run a Shiny application in a Galaxy Interactiv
 
 ## Visualization
 
-Temporary visualizations:
-
-- d3heatmap :
-
-![gie-shiny-heatmap-d3](https://github.com/workflow4metabolomics/gie-shiny-heatmap/blob/master/static/images/gie-shiny-heatmap-d3.png)
-
-- heatmaply :
-
-![gie-shiny-heatmap-plotly](https://github.com/workflow4metabolomics/gie-shiny-heatmap/blob/master/static/images/gie-shiny-heatmap-plotly.png)
+![gie-shiny-heatmap-d3](https://github.com/workflow4metabolomics/gie-shiny-heatmap/blob/master/static/images/gie-shiny-heatmap-16-01-19.png)
 
