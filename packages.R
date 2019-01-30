@@ -4,4 +4,4 @@ options(repos=structure(c(CRAN="https://cran.rstudio.com/")))
 # Update installed packages
 update.packages(ask=FALSE, checkBuilt=TRUE)
 # Install some packages
-install.packages(c('shinyWidgets', 'shinydashboard', 'd3heatmap', 'RColorBrewer', 'BBmisc'))
+install.packages(c('shinyBS', 'shinydashboard', 'shinyWidgets', 'd3heatmap', 'RColorBrewer', 'BBmisc', 'htmlwidgets'))

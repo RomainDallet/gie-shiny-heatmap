@@ -6,8 +6,18 @@
 h5 {
 	margin: 0px 0px 0px 15px !important;
 }
+.popover {
+        width: 200px;
+}
+.popover-content {
+        color: black;
+}
 #HEATMAP_d3 {
 	height : 700px !important;
 	overflow-x: scroll;
   	overflow-y: hidden;
+}
+#download_html {
+	margin-left : 15px;
+	color: black;
 }
