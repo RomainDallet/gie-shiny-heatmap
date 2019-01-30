@@ -11,9 +11,9 @@ RUN Rscript /tmp/packages.R
 # Build the app
 RUN rm -rf /srv/shiny-server/sample-apps && \
     rm /srv/shiny-server/index.html && \
-    mkdir -p /srv/shiny-server/samples/chromato_visu && \
-    chmod -R 755 /srv/shiny-server/samples/chromato_visu && \
-    chown shiny.shiny /srv/shiny-server/samples/chromato_visu
+    mkdir -p /srv/shiny-server/samples/heatmap && \
+    chmod -R 755 /srv/shiny-server/samples/heatmap && \
+    chown shiny.shiny /srv/shiny-server/samples/heatmap
 
-COPY ./app.R /srv/shiny-server/samples/chromato_visu/app.R
-COPY ./static/css/styles.css /srv/shiny-server/samples/chromato_visu/styles.css
+COPY ./app.R /srv/shiny-server/samples/heatmap/app.R
+COPY ./static/css/styles.css /srv/shiny-server/samples/heatmap/styles.css

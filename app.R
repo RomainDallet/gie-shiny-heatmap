@@ -72,17 +72,17 @@ ui <- dashboardPage(
 		hr(),
 		fluidRow(
 			# Download Heatmap
-            downloadButton(
-            	outputId = "download_html",
-            	label = "Download"
+			downloadButton(
+				outputId = "download_html",
+				label = "Download"
             ),
-        	bsPopover(
-                id = "export_png",
-                title = "",
-                content = "Export the heatmap in PNG file.",
-                placement = "bottom",
-                trigger = "hover",
-                options = NULL
+			bsPopover(
+				id = "export_png",
+				title = "",
+				content = "Export the heatmap in PNG file.",
+				placement = "bottom",
+				trigger = "hover",
+				options = NULL
     	    )
         )
 	),
