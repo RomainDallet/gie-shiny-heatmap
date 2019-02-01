@@ -7,10 +7,11 @@ library(BBmisc)
 library(d3heatmap)
 library(htmlwidgets)
 library(RColorBrewer)
-
+library(gtools)
 
 # Import dataset ----
 data_table <- t(as.matrix(read.table("inputdata.tsv", header=TRUE, check.names=FALSE, row.names=1, sep="\t")))
+data_table <- na.replace(data_table,0)
 
 # User interface ----
 ui <- dashboardPage(
