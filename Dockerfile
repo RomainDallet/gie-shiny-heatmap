@@ -2,7 +2,7 @@ FROM quay.io/workflow4metabolomics/gie-shiny:latest
 
 # Installing packages needed for check traffic on the container and kill if none
 RUN apt-get update && \
-    apt-get install --no-install-recommends -y r-cran-car
+    apt-get install --no-install-recommends -y r-cran-car liblzma-dev libbz2-dev
 
 # Install R packages
 COPY ./packages.R /tmp/packages.R

@@ -1,0 +1,40 @@
+<tool id="interactive_tool_heatmap" tool_type="interactive" name="heatmap" version="1.0.0">
+    <description>Visualize tsv dataMatrix files</description>
+    <requirements>
+        <container type="docker">emetabohub/heatmap:latest</container>
+    </requirements>
+    <entry_points>
+        <entry_point name="Heatmat visualisation of $infile.display_name" requires_domain="True">
+            <port>8765</port>
+            <url>/</url>
+        </entry_point>
+    </entry_points>
+    <command><![CDATA[
+        ln -s ${infile} /srv/shiny-server/samples/heatmap/inputdata.tsv
+        && cd /srv/shiny-server/samples/heatmap/
+        && Rscript ./app.R 
+    ]]>
+    </command>
+    <inputs>
+        <param name="infile" type="data" format="tsv" label="A tsv dataMatrix file"/>
+    </inputs>
+    <outputs>
+        <data name="file_output" format="txt" />
+    </outputs>
+    <tests>
+    </tests>
+    <help>
+<![CDATA[
+]]>
+    </help>
+    <citations>
+       <citation type="bibtex">
+       @misc{
+            author       = {Romain Dallet - romain.dallet@sb-roscoff.fr },
+            title        = {{Heatmap - A tool to visualise and manipulate dataMatrix }},
+            publisher    = {},
+            url          = {https://quay.io/repository/workflow4metabolomics/gie-shiny-chromato}
+        }
+    }</citation>
+    </citations>
+</tool>
